@@ -1,0 +1,46 @@
+
+Ask these Options user
+
+============= inLoop till the User End the Program ==================
+	Do you want to ...
+		D - Display the Employee List;
+		M - Add/Edit/Delete the Employee to the list;
+		End - Exit the Program
+
+	Do you want to .. (M - Option)
+		A - Add Employee Details
+		E - Edit Employee Details
+		D - Delete Employee Details
+
+	Add
+		Id (Do the auto-generated code in the end)
+		Name
+		Salary
+		Date of Joining
+
+	Edit
+		Asks - Id to Edit
+			Name
+			Salary
+			Date of Joining
+
+	Delete
+		Asks - Id to Delete
+
+=======================================================================
+
+-------------------
+
+Class - Employee Repository
+	
+	Employee List (Don't know to work on Construtor)
+	
+	GetAll Function
+	Add Function
+	Edit Function
+	Delete Function
+
+Class - Employee
+	Properties
+
+	PrintToConsole()

@@ -1,0 +1,15 @@
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\bin\Debug\net6.0\CRUD_Employees.exe
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\bin\Debug\net6.0\CRUD_Employees.deps.json
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\bin\Debug\net6.0\CRUD_Employees.runtimeconfig.json
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\bin\Debug\net6.0\CRUD_Employees.dll
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\bin\Debug\net6.0\CRUD_Employees.pdb
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.csproj.AssemblyReference.cache
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.AssemblyInfoInputs.cache
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.AssemblyInfo.cs
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.csproj.CoreCompileInputs.cache
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.dll
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\refint\CRUD_Employees.dll
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.pdb
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\CRUD_Employees.genruntimeconfig.cache
+C:\Users\techi\OneDrive\Desktop\Employees\Employees\Employees\obj\Debug\net6.0\ref\CRUD_Employees.dll
