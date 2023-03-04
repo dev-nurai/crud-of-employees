@@ -16,7 +16,7 @@ namespace CRUD_Employees
         public void PrintToConsole()
         {           
                 Console.WriteLine($"Id = {this.EmployeeId}, Name = {this.Name}, Salary = {this.Salary}," +
-                    $"Date of Joining = {this.DateOfJoining}");
+                    $" Date of Joining = {this.DateOfJoining}");
 
             //Every Employee object has their own property and method.
 

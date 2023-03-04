@@ -34,53 +34,37 @@ namespace CRUD_Employees
             return _employees;
         }
 
+        public Employee Get(Guid guid)
+        {
+            return _employees.FirstOrDefault(x => x.EmployeeId == guid);
+        }
+
         public Employee AddEmployee(Employee employee)
         {
 
-            employee.EmployeeId = Guid.NewGuid();
+            employee.EmployeeId = Guid.NewGuid();            
             _employees.Add(employee);
             return employee;
         }
-        
-        //public void UpdateEmployee()
-        //{
-        //    Console.WriteLine("Enter Employee Id");
-        //    int UpdateEmployeeId = int.Parse(Console.ReadLine());
 
-        //    //This is wrong??
-        //    EmployeeRepository employeeRepository = new EmployeeRepository();
-        //    employeeRepository.LoadDummyData(); //Load existing data [Dynamically added data?]
-        //    List<Employee> employees = employeeRepository.GetAll();
-            
-            
-        //    //LoadDummyData();
-        //    //List<Employee> employees1 = GetAll();
+        public Employee UpdateEmployee(Employee employee)
+        {
 
-        //    Employee updateEmployee = employees.Find(x=> x.EmployeeId == UpdateEmployeeId);
-        //    if(updateEmployee != null)
-        //    {
-        //        Console.WriteLine("Enter Employee Name");
-        //        string UpdateEmployeeName = Console.ReadLine();
-        //        updateEmployee.Name = UpdateEmployeeName;
+            var oldEmployee = _employees.FirstOrDefault(x => x.EmployeeId == employee.EmployeeId);
+            oldEmployee.Name = employee.Name;
+            oldEmployee.Salary = employee.Salary;
+            oldEmployee.DateOfJoining = employee.DateOfJoining;
+            return oldEmployee;
+        }
 
-        //        Console.WriteLine("Enter Employee Salary");
-        //        int UpdateEmployeeSalary = int.Parse(Console.ReadLine());
-        //        updateEmployee.Salary = UpdateEmployeeSalary;
-
-        //        Console.WriteLine("Enter Employee Date of Joining");
-        //        string UpdateEmployeeDateOfJoining = Console.ReadLine();
-        //        updateEmployee.DateOfJoining = UpdateEmployeeDateOfJoining;
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Employee not found.");
-        //    }
-
-        //    var indexOfEmployee = _employees.FindIndex(x=> x.EmployeeId == UpdateEmployeeId);
-        //    _employees[indexOfEmployee] = updateEmployee;
-            
-        //}
-
+        public void DeleteEmployee(Guid employeeId)
+        {
+            Employee deleteEmp = _employees.Find(x => x.EmployeeId == employeeId);
+            if(deleteEmp != null)
+            {
+                _employees.Remove(deleteEmp);
+            };
+        }
 
     }
 
