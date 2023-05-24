@@ -10,18 +10,13 @@ namespace CRUD_Employees
 
             EmployeeRepository repository = new EmployeeRepository();
             repository.LoadDummyData();
-            List<Employee> employees = repository.GetAll();
-
-            Program program = new Program();
             
+            Program program = new Program();
+
             //Print Employee List
-            foreach (Employee employee in employees)
-            {
-                employee.PrintToConsole();
+            program.PrintEmployeeList(repository);
 
-            }
-
-            Console.WriteLine("What do you want to perfrom?" +
+            Console.WriteLine("What do you want to perform?" +
                 "\n A - Add Employee" +
                 "\n E - Edit Employee" +
                 "\n D - Delete Employee");
@@ -43,11 +38,7 @@ namespace CRUD_Employees
                     break;
             }
 
-            foreach (Employee employee in employees)
-            {
-                employee.PrintToConsole();
-
-            }
+            program.PrintEmployeeList(repository);
 
 
 
@@ -55,10 +46,19 @@ namespace CRUD_Employees
 
         }//Main Class
 
+        public void PrintEmployeeList(EmployeeRepository repository)
+        {
+            List<Employee> employees = repository.GetAll();
+            foreach (Employee employee in employees)
+            {
+                employee.PrintToConsole();
+            }
+
+        }
+
         public void AddEmployees(EmployeeRepository repository)
         {
             
-
             Console.WriteLine("Enter Employee Name");
             string AddNewName = Console.ReadLine();
 
@@ -70,19 +70,16 @@ namespace CRUD_Employees
 
             Employee addEmployee = new Employee()
             {
-
                 Name = AddNewName,
                 Salary = AddNewSalary,
                 DateOfJoining = AddNewDateOfJoining
             };
-
             Employee AddNewEmployee = repository.AddEmployee(addEmployee);
 
         }
 
         public void EditEmployee(EmployeeRepository repository)
         {
-
             Console.WriteLine("Enter Employee ID");
             string UpdateId = Console.ReadLine();
 
@@ -92,7 +89,6 @@ namespace CRUD_Employees
 
             if (UpdateEmployeeDetails != null)
             {
-
                 Console.WriteLine("Enter Employee Name");
                 string UpdateEmployeeName = Console.ReadLine();
                 UpdateEmployeeDetails.Name = UpdateEmployeeName;
@@ -116,15 +112,11 @@ namespace CRUD_Employees
 
         public void DeleteEmployee(EmployeeRepository repository)
         {
-
-
             Console.WriteLine("Enter Employee ID");
             string DeleteId = Console.ReadLine();
-
             Guid guidIdToDelete = new Guid(DeleteId);
 
             List<Employee> empList = repository.GetAll();
-
             Employee deleteEmployee = empList.Find(x =>x.EmployeeId == guidIdToDelete);
 
             repository.DeleteEmployee(deleteEmployee.EmployeeId);

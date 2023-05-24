@@ -1,0 +1,69 @@
+2023-03-07 13:37:27.216 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-07 13:37:27.359 +05:30 [DBG] Hosting starting
+2023-03-07 13:37:27.459 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: 88B0AA9EEC0D06FAF608E1101C8391616419A193)
+2023-03-07 13:37:27.494 +05:30 [INF] Now listening on: https://localhost:7028
+2023-03-07 13:37:27.494 +05:30 [INF] Now listening on: http://localhost:5114
+2023-03-07 13:37:27.495 +05:30 [DBG] Loaded hosting startup assembly LearningAPI
+2023-03-07 13:37:27.495 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-07 13:37:27.495 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-07 13:37:27.496 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 13:37:27.497 +05:30 [INF] Hosting environment: Development
+2023-03-07 13:37:27.497 +05:30 [INF] Content root path: C:\Users\techi\OneDrive\Desktop\Employees\TestingAPI\TestingAPI\
+2023-03-07 13:37:27.497 +05:30 [DBG] Hosting started
+2023-03-07 13:37:27.661 +05:30 [DBG] Connection id "0HMOUSBV0K4R8" accepted.
+2023-03-07 13:37:27.662 +05:30 [DBG] Connection id "0HMOUSBV0K4R8" started.
+2023-03-07 13:37:27.763 +05:30 [DBG] Connection id "0HMOUSBV0K4R8" received FIN.
+2023-03-07 13:37:27.857 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-07 13:37:27.965 +05:30 [DBG] Connection id "0HMOUSBV0K4R8" stopped.
+2023-03-07 13:37:27.969 +05:30 [DBG] Connection id "0HMOUSBV0K4R8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-07 13:37:28.035 +05:30 [DBG] Connection id "0HMOUSBV0K4R9" accepted.
+2023-03-07 13:37:28.036 +05:30 [DBG] Connection id "0HMOUSBV0K4R9" started.
+2023-03-07 13:37:28.110 +05:30 [DBG] Connection 0HMOUSBV0K4R9 established using the following protocol: "Tls13"
+2023-03-07 13:37:28.250 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2023-03-07 13:37:28.353 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-07 13:37:28.468 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-07 13:37:28.469 +05:30 [DBG] Request did not match any endpoints
+2023-03-07 13:37:28.894 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-07 13:37:28.908 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-07 13:37:28.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 668.3096ms
+2023-03-07 13:37:28.976 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 13:37:28.984 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.1003ms
+2023-03-07 13:37:29.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2023-03-07 13:37:29.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.6714ms
+2023-03-07 13:37:29.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2023-03-07 13:37:29.408 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-07 13:37:29.408 +05:30 [DBG] Request did not match any endpoints
+2023-03-07 13:37:29.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 397.3600ms
+2023-03-07 13:37:36.302 +05:30 [DBG] Connection id "0HMOUSBV0K4R9" received FIN.
+2023-03-07 13:37:36.318 +05:30 [DBG] Connection id "0HMOUSBV0K4R9" is closed. The last processed stream ID was 7.
+2023-03-07 13:37:36.319 +05:30 [DBG] Connection id "0HMOUSBV0K4R9" sending FIN because: "The client closed the connection."
+2023-03-07 13:37:36.333 +05:30 [DBG] Connection id "0HMOUSBV0K4R9" stopped.
+2023-03-07 13:38:42.548 +05:30 [DBG] Connection id "0HMOUSBV0K4RA" accepted.
+2023-03-07 13:38:42.559 +05:30 [DBG] Connection id "0HMOUSBV0K4RA" started.
+2023-03-07 13:38:42.578 +05:30 [DBG] Connection 0HMOUSBV0K4RA established using the following protocol: "Tls13"
+2023-03-07 13:38:42.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/FirstAPI - -
+2023-03-07 13:38:42.599 +05:30 [DBG] 1 candidate(s) found for the request path '/api/FirstAPI'
+2023-03-07 13:38:42.618 +05:30 [DBG] Endpoint 'LearningAPI.Controllers.FirstAPIController.GetPlaces (LearningAPI)' with route pattern 'api/FirstAPI' is valid for the request path '/api/FirstAPI'
+2023-03-07 13:38:42.619 +05:30 [DBG] Request matched endpoint 'LearningAPI.Controllers.FirstAPIController.GetPlaces (LearningAPI)'
+2023-03-07 13:38:42.624 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-07 13:38:42.630 +05:30 [INF] Executing endpoint 'LearningAPI.Controllers.FirstAPIController.GetPlaces (LearningAPI)'
+2023-03-07 13:38:42.658 +05:30 [INF] Route matched with {action = "GetPlaces", controller = "FirstAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[LearningAPI.Models.DTO.PlacesDTO]] GetPlaces() on controller LearningAPI.Controllers.FirstAPIController (LearningAPI).
+2023-03-07 13:38:42.662 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-07 13:38:42.665 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-07 13:38:42.665 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-07 13:38:42.665 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-07 13:38:42.665 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-07 13:38:42.667 +05:30 [DBG] Executing controller factory for controller LearningAPI.Controllers.FirstAPIController (LearningAPI)
+2023-03-07 13:38:42.668 +05:30 [DBG] Executed controller factory for controller LearningAPI.Controllers.FirstAPIController (LearningAPI)
+2023-03-07 13:38:42.671 +05:30 [INF] Getting all Places
+2023-03-07 13:38:42.677 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-03-07 13:38:42.683 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-03-07 13:38:42.683 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-03-07 13:38:42.685 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2023-03-07 13:38:42.701 +05:30 [INF] Executed action LearningAPI.Controllers.FirstAPIController.GetPlaces (LearningAPI) in 20.3482ms
+2023-03-07 13:38:42.702 +05:30 [INF] Executed endpoint 'LearningAPI.Controllers.FirstAPIController.GetPlaces (LearningAPI)'
+2023-03-07 13:38:42.703 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/FirstAPI - - - 406 0 - 122.2273ms

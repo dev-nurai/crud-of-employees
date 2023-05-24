@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningAPI", "TestingAPI\LearningAPI.csproj", "{A1236B28-E265-44B0-9395-617B4B140C9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{E2E67F4E-11DD-400C-8C86-81DFCFFB6296}"
+	ProjectSection(SolutionItems) = preProject
+		Learnthese.txt = Learnthese.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1236B28-E265-44B0-9395-617B4B140C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1236B28-E265-44B0-9395-617B4B140C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1236B28-E265-44B0-9395-617B4B140C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1236B28-E265-44B0-9395-617B4B140C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C11790C-900E-4773-9639-215122C3FD9D}
+	EndGlobalSection
+EndGlobal

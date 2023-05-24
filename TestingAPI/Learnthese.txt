@@ -1,0 +1,34 @@
+
+Routing in dotnet core
+Call api through postman
+dependency injection
+
+what is startup class in .Net core
+filters in .net core
+
+Video
+	Entity Asp.net core
+
+	- Builder Servies (Program.cs) //Learn in detail
+
+
+-------- API --------------
+
+API:
+APIs are mechanisms that enable two software components to communicate with each other
+using a set of definitions and protocols.
+- API stands for Application Programming Interface.
+- API documentation contains information on how developers are to structure those requests and responses.
+
+Types
+- SOAP APIs (Simple Object Access Protocol)
+	 Client and server exchange messages using XML.
+	 This is a less flexible API that was more popular in the past.
+
+- RPC APIs (Remote Procedure Calls)
+	 The client completes a function (or procedure) on the server,
+	 and the server sends the output back to the client.
+
+- Websocket APIs
+
+- REST APIs
